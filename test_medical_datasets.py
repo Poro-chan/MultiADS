@@ -21,21 +21,19 @@ from domain_adaption import memory as memory_da
 from few_shot import memory as memory_fs
 from model import LinearLayer
 from dataset import VisaDataset, MVTecDataset, MPDDDataset, MADDataset, RealIADDataset_v2
-from medical_dataset import Brisc2025Dataset
+from medical_dataset import BrainTumorMRIDataset, Brisc2025Dataset
 from prompts.prompt_ensemble_visa_19cls_test import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_visa
 from prompts.prompt_ensemble_mvtec_20cls import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mvtec
 from prompts.new_prompt_ensemble_mpdd import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mpdd
 from prompts.prompt_ensemble_mad_sim import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mad_sim
 from prompts.prompt_ensemble_mad_real import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mad_real
 from prompts.prompt_ensemble_real_IAD_simple import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_real_iad
+from prompts.prompt_ensemble_brain_tumor_MRI import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_brain_tumor_MRI
 from prompts.prompt_ensemble_brisc2025 import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_brisc2025
 import re
 from tqdm import tqdm
 
 import pdb
-
-from learn_prompts import MultiADS_PromptLearner, brisc2025_templates, mvtec_anomaly_templates, visa_anomaly_templates
-
 
 
 def setup_seed(seed):
@@ -147,19 +145,19 @@ def test(args):
     
     if args.dataset == 'mvtec':
         test_data = MVTecDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
-        templates = mvtec_anomaly_templates
     elif args.dataset == 'visa':
         test_data = VisaDataset(root=dataset_dir, transform=preprocess, target_transform=transform, mode='test')
-        templates = visa_anomaly_templates
     elif args.dataset == 'mpdd':
         test_data = MPDDDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
     elif args.dataset == 'mad_sim' or args.dataset == 'mad_real':
         test_data = MADDataset(root=dataset_dir, transform=preprocess, target_transform=transform, mode='test')
     elif args.dataset == 'real_iad':
         test_data = RealIADDataset_v2(root=dataset_dir, transform=preprocess, aug_rate=-1, target_transform=transform, mode='test')
-    if args.dataset == 'brisc2025':
+    elif args.dataset == 'brain_tumor_MRI' :
+        test_data = BrainTumorMRIDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
+    elif args.dataset == 'brisc2025' :
         test_data = Brisc2025Dataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
-        templates = brisc2025_templates
+
 
     test_dataloader = torch.utils.data.DataLoader(test_data, batch_size=1, shuffle=False)
     obj_list = test_data.get_cls_names()
@@ -176,31 +174,24 @@ def test(args):
                              few_shot_features, dataset_name, device)
 
 
-    details = {
-        "Prompt_length": 4,
-        "learnabel_text_embedding_length": 8,
-        "learnabel_text_embedding_depth": 3
-    }
-
-    prompt_learner = MultiADS_PromptLearner(obj_list, model, templates, details)
-
-    with torch.cuda.amp.autocast(), torch.no_grad():
-        text_prompts = prompt_learner()
-
     # text prompt
-    # with torch.cuda.amp.autocast(), torch.no_grad():
-    #     if args.dataset == 'mvtec':
-    #         text_prompts = encode_text_with_prompt_ensemble_mvtec(model, obj_list, tokenizer, device)
-    #     elif args.dataset == 'visa':
-    #         text_prompts = encode_text_with_prompt_ensemble_visa(model, obj_list, tokenizer, device)
-    #     elif args.dataset == 'mpdd':
-    #         text_prompts = encode_text_with_prompt_ensemble_mpdd(model, obj_list, tokenizer, device)
-    #     elif args.dataset == 'mad_sim':
-    #         text_prompts = encode_text_with_prompt_ensemble_mad_sim(model, obj_list, tokenizer, device)
-    #     elif args.dataset == 'mad_real':
-    #         text_prompts = encode_text_with_prompt_ensemble_mad_real(model, obj_list, tokenizer, device)
-    #     elif args.dataset == 'real_iad':
-    #         text_prompts = encode_text_with_prompt_ensemble_real_iad(model, obj_list, tokenizer, device)
+    with torch.cuda.amp.autocast(), torch.no_grad():
+        if args.dataset == 'mvtec':
+            text_prompts = encode_text_with_prompt_ensemble_mvtec(model, obj_list, tokenizer, device)
+        elif args.dataset == 'visa':
+            text_prompts = encode_text_with_prompt_ensemble_visa(model, obj_list, tokenizer, device)
+        elif args.dataset == 'mpdd':
+            text_prompts = encode_text_with_prompt_ensemble_mpdd(model, obj_list, tokenizer, device)
+        elif args.dataset == 'mad_sim':
+            text_prompts = encode_text_with_prompt_ensemble_mad_sim(model, obj_list, tokenizer, device)
+        elif args.dataset == 'mad_real':
+            text_prompts = encode_text_with_prompt_ensemble_mad_real(model, obj_list, tokenizer, device)
+        elif args.dataset == 'real_iad':
+            text_prompts = encode_text_with_prompt_ensemble_real_iad(model, obj_list, tokenizer, device)
+        elif args.dataset == 'brain_tumor_MRI':
+            text_prompts = encode_text_with_prompt_ensemble_brain_tumor_MRI(model, obj_list, tokenizer, device)
+        elif args.dataset == 'brisc2025':
+            text_prompts = encode_text_with_prompt_ensemble_brisc2025(model, obj_list, tokenizer, device)
 
 
     results = {}
@@ -328,6 +319,8 @@ def test(args):
             cv2.imwrite(os.path.join(save_vis, filename), vis)
 
     # metrics
+    all_gt_px = []
+    all_pr_px = []
     table_ls = []
     auroc_sp_ls = []
     auroc_px_ls = []
@@ -363,6 +356,10 @@ def test(args):
         pr_sp = pr_sp_tmp
 
         # pdb.set_trace()
+        all_gt_px.append(gt_px.ravel())
+        all_pr_px.append(pr_px.ravel())
+        unique_vals = np.unique(gt_px)
+
         auroc_px = roc_auc_score(gt_px.ravel(), pr_px.ravel()) #, multi_class='ovo', labels = class_ids)
         auroc_sp = roc_auc_score(gt_sp, pr_sp) #, multi_class='ovo', labels = class_ids)
         ap_sp = average_precision_score(gt_sp, pr_sp)
