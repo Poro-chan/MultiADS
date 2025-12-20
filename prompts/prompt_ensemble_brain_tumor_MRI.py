@@ -15,18 +15,18 @@ def encode_text_with_prompt_ensemble(model, objs, tokenizer, device):
     ]
 
     glioma = [
-        '{} has a glioma', '{} shows signs of a glioma', 'glioma found on {}',
-        '{} with a visible glioma', 'MRI shows a glioma in {}', '{} affected by a glioma tumor'
+        '{} has a glioma tumor', '{} shows signs of a glioma', 'glioma tumor found on {}',
+        '{} with a visible glioma tumor', 'MRI shows a glioma in {}', '{} affected by a glioma tumor'
     ]
 
     meningioma = [
-        '{} has a meningioma', 'a meningioma visible on {}', 'meningioma found on {}',
-        '{} with a meningioma tumor', 'presence of a meningioma in {}', '{} meningioma growth on {}'
+        '{} has a meningioma tumor', 'a meningioma visible on {}', 'meningioma found on {}',
+        '{} with a meningioma tumor', 'presence of a meningioma in {}', 'meningioma growth on {}'
     ]
 
     pituitary = [
-        '{} with a pituitary', '{} shows a pituitary', 'visible pituitary on {}',
-        '{} has a pituitary', 'pituitary growth visible in {}', 'pituitary tumor detected in {}'
+        '{} with a pituitary tumor', '{} shows a pituitary tumor', 'visible pituitary on {}',
+        '{} has a pituitary tumor', 'pituitary growth visible in {}', 'pituitary tumor detected in {}'
     ]
 
     prompt_state = [healthy, glioma, meningioma, pituitary]
