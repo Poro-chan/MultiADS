@@ -17,16 +17,15 @@ import torchvision.transforms as transforms
 import logging
 
 import open_clip
-from dataset import VisaDatasetV2, MVTecDataset, MPDDDataset, RealIADDataset_v2
-from medical_dataset import BrainTumorMRIDataset, Brisc2025Dataset
+from dataset import VisaDatasetV2, MVTecDataset
+from medical_dataset import Brisc2025Dataset, COVID19Dataset, BUSUCLMDataset
 from model import LinearLayer
 from loss import FocalLoss, BinaryDiceLoss
 from prompts.prompt_ensemble_mvtec_20cls import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mvtec
 from prompts.prompt_ensemble_visa_19cls import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_visa
-from prompts.new_prompt_ensemble_mpdd import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mpdd
-from prompts.prompt_ensemble_real_IAD_simple import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_real_iad
-from prompts.prompt_ensemble_brain_tumor_MRI import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_brain_tumor_MRI
 from prompts.prompt_ensemble_brisc2025 import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_brisc2025
+from prompts.prompt_ensemble_covid19 import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_covid19
+from prompts.prompt_ensemble_bus_uclm import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_bus_uclm
 import re
 from tqdm import tqdm
 import csv
@@ -108,27 +107,24 @@ def train(args):
     ])
 
     # datasets
-    assert args.dataset in ['mvtec', 'visa', 'mpdd', 'brain_tumor_MRI', 'brisc2025'] 
+    assert args.dataset in ['mvtec', 'visa', 'brisc2025', 'covid19', 'bus_uclm'] 
     if args.dataset == 'mvtec':
         train_data = MVTecDataset(root=args.train_data_path, transform=preprocess, target_transform=transform,
                                 aug_rate=args.aug_rate)
         # gt_defect = {"good":0, "bent":1, "bent_lead":2, "bent_wire":3, "broken":4, "broken_large":5, "broken_small":6, "broken_teeth":7, "color":8, "combined":9, "contamination":10, "metal_contamination":11, "crack":12, "cut":13, "cut_inner_insulation":14, "cut_lead":15, "cut_outer_insulation":16, "fabric":17, "manipulated_front":18, "fabric_border":19, "fabric_interior":20, "faulty_imprint":21, "print":22, "glue":23, "glue_strip":24, "hole":25, "missing":26, "missing_wire":27, "missing_cable":28, "poke":29, "poke_insulation":30, "rough":31, "scratch":32, "scratch_head":33, "scratch_neck":34, "squeeze":35, "squeezed_teeth":36, "thread":37, "thread_side":38, "thread_top":39, "liquid":40, "oil":41, "misplaced":42, "cable_swap":43, "flip":44, "fold":45, "split_teeth":46, "damaged_case":47, "defective":48, "gray_stroke":49, "pill_type":50}
-        gt_defect = {"good":0, "bent":1, "bent_lead":1, "bent_wire":1, "manipulated_front":1, "broken":2, "broken_large":2, "broken_small":2, "broken_teeth":2, "color":3, "combined":4, "contamination":5, "metal_contamination":5, "crack":6, "cut":7, "cut_inner_insulation":7, "cut_lead":7, "cut_outer_insulation":7, "fabric":8, "fabric_border":8, "fabric_interior":8, "faulty_imprint":9, "print":9, "glue":10, "glue_strip":10, "hole":11, "missing":12, "missing_wire":12, "missing_cable":12, "poke":13, "poke_insulation":13, "rough":14, "scratch":15, "scratch_head":15, "scratch_neck":15, "squeeze":16, "squeezed_teeth":16, "thread":17, "thread_side":17, "thread_top":17, "liquid":18, "oil":18, "misplaced":19, "cable_swap":19, "flip":19, "fold":19, "split_teeth":19, "damaged_case":20, "defective":20, "gray_stroke":20, "pill_type":20}  
+        gt_defect = {"good": 0, "bent": 1, "bent_lead": 1, "bent_wire": 1, "manipulated_front": 1, "broken": 2, "broken_large": 2, "broken_small": 2, "broken_teeth": 2, "color": 3, "combined": 4, "contamination": 5, "metal_contamination": 5, "crack": 6, "cut":7, "cut_inner_insulation":7, "cut_lead":7, "cut_outer_insulation":7, "fabric":8, "fabric_border":8, "fabric_interior":8, "faulty_imprint":9, "print":9, "glue":10, "glue_strip":10, "hole":11, "missing":12, "missing_wire":12, "missing_cable":12, "poke":13, "poke_insulation":13, "rough":14, "scratch":15, "scratch_head":15, "scratch_neck":15, "squeeze":16, "squeezed_teeth":16, "thread":17, "thread_side":17, "thread_top":17, "liquid":18, "oil":18, "misplaced":19, "cable_swap":19, "flip":19, "fold":19, "split_teeth":19, "damaged_case":20, "defective":20, "gray_stroke":20, "pill_type":20}  
     elif args.dataset == 'visa':
         train_data = VisaDatasetV2(root=args.train_data_path, transform=preprocess, target_transform=transform)
         gt_defect = {'normal': 0, 'damage': 1, 'scratch':2, 'breakage': 3, 'burnt': 4, 'weird wick': 5, 'stuck': 6, 'crack': 7, 'wrong place': 8, 'partical': 9, 'bubble': 10, 'melded': 11, 'hole': 12, 'melt': 13, 'bent':14, 'spot': 15, 'extra': 16, 'chip': 17, 'missing': 18}
-    elif args.dataset == 'mpdd':
-        train_data =  MPDDDataset(root=args.train_data_path, transform=preprocess, target_transform=transform, aug_rate=args.aug_rate)
-        gt_defect =  {"good":0, 'hole':1, 'scratches':2, 'bend_and_parts_mismatch':3, 'parts_mismatch':4, 'defective_painting':5, 'major_rust':6, 'total_rust':6, 'flattening':7}
-    elif args.dataset == 'real_iad':
-        test_data = RealIADDataset_v2(root=args.train_data_path, transform=preprocess, aug_rate=-1, target_transform=transform, mode='test')
-        gt_defect =  {"good":0, 'pit':1, 'deformation':2, 'abrasion':3, 'scratch':4, 'damage':5, 'missing':6, 'foreign':7, 'contamination':8}
-    elif args.dataset == 'brain_tumor_MRI':
-        train_data = BrainTumorMRIDataset(root=args.train_data_path, transform=preprocess, target_transform=transform, aug_rate=args.aug_rate)
-        gt_defect = {'good': 0, 'glioma': 1, 'meningioma':2, 'pituitary': 3}   
-    elif args.dataset == 'brisc2025' :
-        train_data = Brisc2025Dataset(root=args.train_data_path, transform=preprocess, target_transform=transform, aug_rate=args.aug_rate)
-        gt_defect = {'good': 0, 'glioma': 1, 'meningioma':2, 'pituitary': 3} 
+    elif args.dataset == 'brisc2025':
+        train_data = Brisc2025Dataset(root=args.train_data_path, transform=preprocess, target_transform=transform, aug_rate=args.aug_rate, mode='test')
+        gt_defect = {'good': 0, 'glioma': 1, 'meningioma':2, 'pituitary': 3}  
+    elif args.dataset == 'covid19':
+        train_data = COVID19Dataset(root=args.train_data_path, transform=preprocess, target_transform=transform, aug_rate=args.aug_rate, mode='test')
+        gt_defect = {'good': 0, 'covid': 1, 'lung_opacity': 2, 'viral_pneumonia': 3}   
+    elif args.dataset == 'bus_uclm':
+        train_data = BUSUCLMDataset(root=args.train_data_path, transform=preprocess, target_transform=transform, aug_rate=args.aug_rate, mode='test')
+        gt_defect = {'good': 0, 'benign': 1, 'malign': 2}   
         
 
 
@@ -152,14 +148,12 @@ def train(args):
             text_prompts = encode_text_with_prompt_ensemble_mvtec(model, obj_list, tokenizer, device)
         elif args.dataset == 'visa':
             text_prompts = encode_text_with_prompt_ensemble_visa(model, obj_list, tokenizer, device)
-        elif args.dataset == 'mpdd':
-            text_prompts = encode_text_with_prompt_ensemble_mpdd(model, obj_list, tokenizer, device)
-        elif args.dataset == 'real_iad':
-            text_prompts = encode_text_with_prompt_ensemble_real_iad(model, obj_list, tokenizer, device)
-        elif args.dataset == 'brain_tumor_MRI' :
-            text_prompts = encode_text_with_prompt_ensemble_brain_tumor_MRI(model, obj_list, tokenizer, device)
         elif args.dataset == 'brisc2025' :
             text_prompts = encode_text_with_prompt_ensemble_brisc2025(model, obj_list, tokenizer, device)
+        elif args.dataset == 'covid19':
+            text_prompts = encode_text_with_prompt_ensemble_covid19(model, obj_list, tokenizer, device)
+        elif args.dataset == 'bus_uclm':
+            text_prompts = encode_text_with_prompt_ensemble_bus_uclm(model, obj_list, tokenizer, device)
 
     for epoch in range(epochs):
         print("EPOCH = ", epoch)
@@ -172,16 +166,17 @@ def train(args):
             cls_name = items['cls_name']
 
             # new GT data
-            if args.dataset == 'mvtec' or args.dataset == 'mpdd':
+            if args.dataset == 'mvtec':
                 cls_id = []               
                 for i in paths:
-                    match = re.search(r'\/([^\/]+)\/[^\/]*$', i) # './data/mvtec/transistor/test/good/004.png', './data/mvtec/carpet/test/hole/002.png', './data/mvtec/metal_nut/test/scratch/004.png',
+                    match = re.search(r'\/([^\/]+)\/[^\/]*$', i)
                     cls_id.append(int(gt_defect[str(match.group(1))]))
             elif args.dataset == 'visa':
                 defect_cls = items['defect_cls']
                 cls_id = [gt_defect[name] for name in defect_cls]
-            elif args.dataset == 'brain_tumor_MRI' or args.dataset == 'brisc2025':
-                cls_id = [gt_defect[name] for name in cls_name]
+            elif args.dataset == 'brisc2025' or args.dataset == 'covid19' or args.dataset == 'bus_uclm':
+                specie_name = items['specie_name']
+                cls_id = [gt_defect[name] for name in specie_name]
 
 
             with torch.cuda.amp.autocast():

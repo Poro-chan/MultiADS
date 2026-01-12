@@ -20,16 +20,13 @@ import open_clip
 from domain_adaption import memory as memory_da
 from few_shot import memory as memory_fs
 from model import LinearLayer
-from dataset import VisaDataset, MVTecDataset, MPDDDataset, MADDataset, RealIADDataset_v2
-from medical_dataset import BrainTumorMRIDataset, Brisc2025Dataset
+from dataset import VisaDataset, MVTecDataset
+from medical_dataset import Brisc2025Dataset, COVID19Dataset, BUSUCLMDataset
 from prompts.prompt_ensemble_visa_19cls_test import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_visa
 from prompts.prompt_ensemble_mvtec_20cls import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mvtec
-from prompts.new_prompt_ensemble_mpdd import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mpdd
-from prompts.prompt_ensemble_mad_sim import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mad_sim
-from prompts.prompt_ensemble_mad_real import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mad_real
-from prompts.prompt_ensemble_real_IAD_simple import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_real_iad
-from prompts.prompt_ensemble_brain_tumor_MRI import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_brain_tumor_MRI
 from prompts.prompt_ensemble_brisc2025 import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_brisc2025
+from prompts.prompt_ensemble_covid19 import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_covid19
+from prompts.prompt_ensemble_bus_uclm import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_bus_uclm
 import re
 from tqdm import tqdm
 
@@ -85,6 +82,50 @@ def cal_pro_score(masks, amaps, max_step=200, expect_fpr=0.3):
     fprs = (fprs - fprs.min()) / (fprs.max() - fprs.min())
     pro_auc = auc(fprs, pros[idxes])
     return pro_auc
+
+def compute_metrics(indices, results) :
+    gt_px = []
+    pr_px = []
+    gt_sp = []
+    pr_sp = []
+    pr_sp_tmp = []
+
+    for idxes in indices:
+        gt_px.append(results['imgs_masks'][idxes].squeeze(1).numpy())
+        pr_px.append(results['anomaly_maps'][idxes])
+        pr_sp_tmp.append(np.max(results['anomaly_maps'][idxes]))
+        gt_sp.append(results['gt_sp'][idxes])
+        pr_sp.append(results['pr_sp'][idxes])
+
+    gt_px = np.array(gt_px)
+    gt_sp = np.array(gt_sp)
+    pr_px = np.array(pr_px)
+    pr_sp = np.array(pr_sp)
+
+    pr_sp_tmp = np.array(pr_sp_tmp)
+    pr_sp_tmp = (pr_sp_tmp - pr_sp_tmp.min()) / (pr_sp_tmp.max() - pr_sp_tmp.min())
+    pr_sp = pr_sp_tmp
+
+    auroc_px = roc_auc_score(gt_px.ravel(), pr_px.ravel())
+    auroc_sp = roc_auc_score(gt_sp, pr_sp)
+    ap_sp = average_precision_score(gt_sp, pr_sp)
+    ap_px = average_precision_score(gt_px.ravel(), pr_px.ravel())
+
+    precisions, recalls, thresholds = precision_recall_curve(gt_sp, pr_sp)
+    f1_scores = (2 * precisions * recalls) / (precisions + recalls)
+    f1_sp = np.max(f1_scores[np.isfinite(f1_scores)])
+
+    precisions, recalls, thresholds = precision_recall_curve(gt_px.ravel(), pr_px.ravel())
+    f1_scores = (2 * precisions * recalls) / (precisions + recalls)
+    f1_px = np.max(f1_scores[np.isfinite(f1_scores)])
+
+    if len(gt_px.shape) == 4:
+        gt_px = gt_px.squeeze(1)
+    if len(pr_px.shape) == 4:
+        pr_px = pr_px.squeeze(1)
+    aupro = cal_pro_score(gt_px, pr_px)
+
+    return auroc_px, f1_px, ap_px, aupro, auroc_sp, f1_sp, ap_sp
 
 
 def test(args):
@@ -147,17 +188,12 @@ def test(args):
         test_data = MVTecDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
     elif args.dataset == 'visa':
         test_data = VisaDataset(root=dataset_dir, transform=preprocess, target_transform=transform, mode='test')
-    elif args.dataset == 'mpdd':
-        test_data = MPDDDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
-    elif args.dataset == 'mad_sim' or args.dataset == 'mad_real':
-        test_data = MADDataset(root=dataset_dir, transform=preprocess, target_transform=transform, mode='test')
-    elif args.dataset == 'real_iad':
-        test_data = RealIADDataset_v2(root=dataset_dir, transform=preprocess, aug_rate=-1, target_transform=transform, mode='test')
-    elif args.dataset == 'brain_tumor_MRI' :
-        test_data = BrainTumorMRIDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
     elif args.dataset == 'brisc2025' :
         test_data = Brisc2025Dataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
-
+    elif args.dataset == 'covid19' :
+        test_data = COVID19Dataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
+    elif args.dataset == 'bus_uclm' :
+        test_data = BUSUCLMDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
 
     test_dataloader = torch.utils.data.DataLoader(test_data, batch_size=1, shuffle=False)
     obj_list = test_data.get_cls_names()
@@ -180,18 +216,12 @@ def test(args):
             text_prompts = encode_text_with_prompt_ensemble_mvtec(model, obj_list, tokenizer, device)
         elif args.dataset == 'visa':
             text_prompts = encode_text_with_prompt_ensemble_visa(model, obj_list, tokenizer, device)
-        elif args.dataset == 'mpdd':
-            text_prompts = encode_text_with_prompt_ensemble_mpdd(model, obj_list, tokenizer, device)
-        elif args.dataset == 'mad_sim':
-            text_prompts = encode_text_with_prompt_ensemble_mad_sim(model, obj_list, tokenizer, device)
-        elif args.dataset == 'mad_real':
-            text_prompts = encode_text_with_prompt_ensemble_mad_real(model, obj_list, tokenizer, device)
-        elif args.dataset == 'real_iad':
-            text_prompts = encode_text_with_prompt_ensemble_real_iad(model, obj_list, tokenizer, device)
-        elif args.dataset == 'brain_tumor_MRI':
-            text_prompts = encode_text_with_prompt_ensemble_brain_tumor_MRI(model, obj_list, tokenizer, device)
         elif args.dataset == 'brisc2025':
             text_prompts = encode_text_with_prompt_ensemble_brisc2025(model, obj_list, tokenizer, device)
+        elif args.dataset == 'covid19':
+            text_prompts = encode_text_with_prompt_ensemble_covid19(model, obj_list, tokenizer, device)
+        elif args.dataset == 'bus_uclm':
+            text_prompts = encode_text_with_prompt_ensemble_bus_uclm(model, obj_list, tokenizer, device)
 
 
     results = {}
@@ -208,13 +238,6 @@ def test(args):
         results['cls_names'].append(cls_name[0])
 
         img_masks = items['img_mask']
-
-        # new GT data
-        # cls_id = []               
-        # for i in paths:
-        #     match = re.search(r'\/([^\/]+)\/[^\/]*$', i) # './data/mvtec/transistor/test/good/004.png', './data/mvtec/carpet/test/hole/002.png', './data/mvtec/metal_nut/test/scratch/004.png',
-        #     cls_id.append(int(gt_defect[str(match.group(1))]))
-        # class_ids.append(cls_id)
 
         gt_mask = items['img_mask']
         
@@ -257,6 +280,7 @@ def test(args):
 
                 anomaly_maps.append(anomaly_map.cpu().numpy())
             anomaly_map = np.sum(anomaly_maps, axis=0)
+            torch.cuda.empty_cache()
 
             # few shot
             if args.mode == 'few_shot':
@@ -319,8 +343,6 @@ def test(args):
             cv2.imwrite(os.path.join(save_vis, filename), vis)
 
     # metrics
-    all_gt_px = []
-    all_pr_px = []
     table_ls = []
     auroc_sp_ls = []
     auroc_px_ls = []
@@ -356,10 +378,6 @@ def test(args):
         pr_sp = pr_sp_tmp
 
         # pdb.set_trace()
-        all_gt_px.append(gt_px.ravel())
-        all_pr_px.append(pr_px.ravel())
-        unique_vals = np.unique(gt_px)
-
         auroc_px = roc_auc_score(gt_px.ravel(), pr_px.ravel()) #, multi_class='ovo', labels = class_ids)
         auroc_sp = roc_auc_score(gt_sp, pr_sp) #, multi_class='ovo', labels = class_ids)
         ap_sp = average_precision_score(gt_sp, pr_sp)
@@ -428,6 +446,9 @@ if __name__ == '__main__':
     
     parser.add_argument("--seed", type=int, default=42, help="random seed")
     args = parser.parse_args()
+
+    if args.dataset.lower() == "covid19" :
+        args.image_size = 384
 
     setup_seed(args.seed)
     test(args)

@@ -8,30 +8,30 @@ import torch
 import numpy as np
 
 def encode_text_with_prompt_ensemble(model, objs, tokenizer, device):
-    no_tumor = [
-        '{}', 'healthy {}', 'perfectly healthy {}', 'no tumor in {}', '{} without a tumor',  
-        '{} with no tumors', 'normal brain MRI of {}', 'healthy scan of {}', '{} shows no sign of a tumor',
+    good = [
+        '{}', 'healthy {}', 'perfectly healthy {}', 'no disease in {}', '{} without a disease',  
+        '{} with no disease', 'normal photo of {}', 'healthy picture of {}', '{} shows no sign of a disease',
         'no anomalies detected in {}'
     ]
 
-    glioma = [
-        '{} has a glioma tumor', '{} shows signs of a glioma', 'glioma tumor found on {}',
-        '{} with a visible glioma tumor', 'MRI shows a glioma in {}', '{} affected by a glioma tumor'
+    covid = [
+        '{} has covid', '{} shows signs of covid', 'covid found on {}',
+        '{} with visible covid', 'shows covid in {}', '{} affected by covid'
     ]
 
-    meningioma = [
-        '{} has a meningioma tumor', 'a meningioma visible on {}', 'meningioma found on {}',
-        '{} with a meningioma tumor', 'presence of a meningioma in {}', 'meningioma growth on {}'
+    lung_opacity = [
+        '{} has lung opacity', 'a lung opacity visible on {}', 'lung opacity found on {}',
+        '{} with lung opacity', 'presence of a lung opacity in {}', 'lung opacity on {}'
     ]
 
-    pituitary = [
-        '{} with a pituitary tumor', '{} shows a pituitary tumor', 'visible pituitary on {}',
-        '{} has a pituitary tumor', 'pituitary growth visible in {}', 'pituitary tumor detected in {}'
+    viral_pneumonia = [
+        '{} with viral pneumonia', '{} shows viral pneumonia', 'visible viral pneumonia on {}',
+        '{} has viral pneumonia', 'viral pneumonia visible on {}', 'viral pneumonia detected in {}'
     ]
 
-    prompt_state = [no_tumor, glioma, meningioma, pituitary]
+    prompt_state = [good, covid, lung_opacity, viral_pneumonia]
 
-    prompt_templates = ['a scan of {}', 'scan showing {}', 'scan with {}', 'a medical scan of {}', 'an image showing {}']
+    prompt_templates = ['a photo of a {}', 'photo showing {}', 'photo with {}', 'a medical photo of {}', 'an image showing {}']
 
     text_prompts = {}
     for obj in objs:
