@@ -21,7 +21,7 @@ class Brisc2025Dataset(data.Dataset):
 		meta_info = meta_info[mode]
 
 		if mode == 'train':
-			self.cls_names = ['no_tumor']
+			self.cls_names = [obj_name]
 			save_dir = os.path.join(save_dir, 'k_shot.txt')
 		else:
 			self.cls_names = list(meta_info.keys())

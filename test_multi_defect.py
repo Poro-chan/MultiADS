@@ -21,12 +21,16 @@ import open_clip
 from few_shot import memory
 from model import LinearLayer
 from dataset import VisaDataset, MVTecDataset, MPDDDataset, VisaDatasetV2, MADDataset, RealIADDataset_v2
+from medical_dataset import Brisc2025Dataset, COVID19Dataset, BUSUCLMDataset
 from prompts.prompt_ensemble_visa_19cls_single import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_visa
 from prompts.prompt_ensemble_mvtec_20cls import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mvtec
 from prompts.new_prompt_ensemble_mpdd import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mpdd
 from prompts.prompt_ensemble_mad_real import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mad_real
 from prompts.prompt_ensemble_mad_sim import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mad_sim
 from prompts.prompt_ensemble_real_IAD import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_real_iad
+from prompts.prompt_ensemble_brisc2025 import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_brisc2025
+from prompts.prompt_ensemble_covid19 import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_covid19
+from prompts.prompt_ensemble_bus_uclm import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_bus_uclm
 
 product_type2defect_type_mvtec = {
     'bottle': ['good', 'broken', 'contamination'],
@@ -138,6 +142,18 @@ product_type2defect_type_real_iad = {
     'usb_adaptor': ['good', 'abrasion', 'contamination', 'scratch', 'pit'], 
     'vcpill': ['good', 'contamination', 'scratch', 'missing', 'pit'], 
     'tape': ['good', 'missing', 'contamination', 'damage']
+}
+
+product_type2defect_type_brisc2025 = {
+    'brain_MRI': ['good', 'glioma', 'meningioma', 'pituitary']
+}
+
+product_type2defect_type_bus_uclm = {
+    'breast_ultrasound': ['good', 'benign', 'malign']
+}
+
+product_type2defect_type_covid19 = {
+    'chest_xray': ['good', 'covid', 'lung_opacity', 'viral_pneumonia']
 }
 
 import re
@@ -285,6 +301,23 @@ def test(args):
         gt_defect =  {"good":0, 'pit':1, 'deformation':2, 'abrasion':3, 'scratch':4, 'damage':5, 'missing':6, 'foreign':7, 'contamination':8}
         defects = ['good', 'pit', 'deformation', 'abrasion', 'scratch', 'damage', 'missing', 'foreign', 'contamination']
         p_cls2d_cls = product_type2defect_type_real_iad
+    
+    elif args.dataset == 'brisc2025':
+        test_data = Brisc2025Dataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
+        gt_defect =  {"good":0, 'glioma':1, 'meningioma':2, 'pituitary':3}
+        defects = ['good', 'glioma', 'meningioma', 'pituitary']
+        p_cls2d_cls = product_type2defect_type_brisc2025
+    elif args.dataset == 'bus_uclm':
+        test_data = BUSUCLMDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
+        gt_defect =  {"good":0, 'benign':1, 'malign':2}
+        defects = ['good', 'benign', 'malign']
+        p_cls2d_cls = product_type2defect_type_bus_uclm
+    elif args.dataset == 'covid19':
+        test_data = COVID19Dataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
+        gt_defect =  {"good":0, 'covid':1, 'lung_opacity':2, 'viral_pneumonia':3}
+        defects = ['good', 'covid', 'lung_opacity', 'viral_pneumonia']
+        p_cls2d_cls = product_type2defect_type_covid19
+    
     test_dataloader = torch.utils.data.DataLoader(test_data, batch_size=1, shuffle=False)
     obj_list = test_data.get_cls_names()
 
@@ -304,6 +337,12 @@ def test(args):
             text_prompts = encode_text_with_prompt_ensemble_mad_real(model, obj_list, tokenizer, device)
         elif args.dataset == 'real_iad':
             text_prompts = encode_text_with_prompt_ensemble_real_iad(model, obj_list, tokenizer, device)
+        elif args.dataset == 'brisc2025':
+            text_prompts = encode_text_with_prompt_ensemble_brisc2025(model, obj_list, tokenizer, device)
+        elif args.dataset == 'covid19':
+            text_prompts = encode_text_with_prompt_ensemble_covid19(model, obj_list, tokenizer, device)
+        elif args.dataset == 'bus_uclm':
+            text_prompts = encode_text_with_prompt_ensemble_bus_uclm(model, obj_list, tokenizer, device)
     results = {}
     results['cls_names'] = []
     results['imgs_masks'] = []
@@ -326,6 +365,9 @@ def test(args):
         elif args.dataset == 'visa' or args.dataset == 'mad_sim' or args.dataset == 'mad_real' or args.dataset =='real_iad':
             defect_cls = items['defect_cls']
             defect_cls_id = [gt_defect[name] for name in defect_cls]
+        elif args.dataset == 'brisc2025' or args.dataset == 'covid19' or args.dataset == 'bus_uclm':
+                specie_name = items['specie_name']
+                defect_cls_id = [gt_defect[name] for name in specie_name]
 
         gt_mask = items['img_mask']
         
@@ -369,6 +411,7 @@ def test(args):
 
                 anomaly_maps.append(anomaly_map.cpu().numpy())
             anomaly_map = np.sum(anomaly_maps, axis=0)
+            torch.cuda.empty_cache()
 
             # few shot
             # if args.mode == 'few_shot':
@@ -491,8 +534,8 @@ if __name__ == '__main__':
     # paths
     parser.add_argument("--data_path", type=str, default="./data/visa", help="path to test dataset")
     parser.add_argument("--save_path", type=str, default='./results/mvtec_visa_multi_seg/zero_shot/', help='path to save results')
-    parser.add_argument("--checkpoint_path", type=str, default='./exps/mvtec/epoch_2.pth ', help='path to save results')
-    parser.add_argument("--config_path", type=str, default='./open_clip/model_configs/ViT-L-14-336.json ', help="model configs")
+    parser.add_argument("--checkpoint_path", type=str, default='./exps/mvtec/epoch_2.pth', help='path to save results')
+    parser.add_argument("--config_path", type=str, default='./open_clip/model_configs/ViT-L-14-336.json', help="model configs")
     # model
     parser.add_argument("--dataset", type=str, default='visa', help="test dataset")
     parser.add_argument("--model", type=str, default="ViT-L-14-336", help="model used")
@@ -505,6 +548,9 @@ if __name__ == '__main__':
     parser.add_argument("--k_shot", type=int, default=4, help="e.g., 10-shot, 5-shot, 1-shot")
     parser.add_argument("--seed", type=int, default=42, help="random seed")
     args = parser.parse_args()
+
+    if args.dataset.lower() == "covid19" :
+        args.image_size = 128
 
     setup_seed(args.seed)
     test(args)
