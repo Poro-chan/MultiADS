@@ -1,11 +1,3 @@
-data/brisc2025/classification_task
-data/brisc2025/segmentation_task
-data/COVID-19/COVID
-data/COVID-19/Lung_Opacity
-data/COVID-19/Normal
-data/COVID-19/"Viral Pneumonia"
-data/BUS-UCLM
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -167,8 +159,8 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-data/*
-!data/**/
+data/**
+#!data/**/
 !data/*.json
 !data/**/*.json
 /exps
