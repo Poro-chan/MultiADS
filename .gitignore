@@ -1,10 +1,10 @@
-data/brisc2025
+data/brisc2025/classification_task
+data/brisc2025/segmentation_task
 data/COVID-19/COVID
 data/COVID-19/Lung_Opacity
 data/COVID-19/Normal
-data/COVID-19/Viral Pneumonia
-data/BUS-UCLM/bus_uclm_separated
-data/BUS-UCLM/BUS-UCLM Breast ultrasound lesion segmentation dataset
+data/COVID-19/"Viral Pneumonia"
+data/BUS-UCLM
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
