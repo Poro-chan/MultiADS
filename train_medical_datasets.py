@@ -18,14 +18,19 @@ import logging
 
 import open_clip
 from dataset import VisaDatasetV2, MVTecDataset
-from medical_dataset import Brisc2025Dataset, COVID19Dataset, BUSUCLMDataset
-from model import LinearLayer
+from medical_dataset import Brisc2025Dataset, COVID19Dataset, BUSUCLMDataset, ColonDBDataset, ISICDataset, BrainMRIDataset, ChexpertDataset
+from model import LinearLayer, MLPLayerWrapper
 from loss import FocalLoss, BinaryDiceLoss
 from prompts.prompt_ensemble_mvtec_20cls import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mvtec
 from prompts.prompt_ensemble_visa_19cls import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_visa
 from prompts.prompt_ensemble_brisc2025 import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_brisc2025
 from prompts.prompt_ensemble_covid19 import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_covid19
 from prompts.prompt_ensemble_bus_uclm import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_bus_uclm
+from prompts.prompt_ensemble_colon import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_colon_db
+from prompts.prompt_ensemble_brain import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_brainmri
+from prompts.prompt_ensemble_isic import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_isic
+from prompts.prompt_ensemble_chexpert import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_chexpert
+
 import re
 from tqdm import tqdm
 import csv
@@ -107,11 +112,10 @@ def train(args):
     ])
 
     # datasets
-    assert args.dataset in ['mvtec', 'visa', 'brisc2025', 'covid19', 'bus_uclm'] 
+    assert args.dataset in ['mvtec', 'visa', 'brisc2025', 'covid19', 'bus_uclm', 'colondb', 'isic', 'brainmri', 'chexpert'] 
     if args.dataset == 'mvtec':
         train_data = MVTecDataset(root=args.train_data_path, transform=preprocess, target_transform=transform,
                                 aug_rate=args.aug_rate)
-        # gt_defect = {"good":0, "bent":1, "bent_lead":2, "bent_wire":3, "broken":4, "broken_large":5, "broken_small":6, "broken_teeth":7, "color":8, "combined":9, "contamination":10, "metal_contamination":11, "crack":12, "cut":13, "cut_inner_insulation":14, "cut_lead":15, "cut_outer_insulation":16, "fabric":17, "manipulated_front":18, "fabric_border":19, "fabric_interior":20, "faulty_imprint":21, "print":22, "glue":23, "glue_strip":24, "hole":25, "missing":26, "missing_wire":27, "missing_cable":28, "poke":29, "poke_insulation":30, "rough":31, "scratch":32, "scratch_head":33, "scratch_neck":34, "squeeze":35, "squeezed_teeth":36, "thread":37, "thread_side":38, "thread_top":39, "liquid":40, "oil":41, "misplaced":42, "cable_swap":43, "flip":44, "fold":45, "split_teeth":46, "damaged_case":47, "defective":48, "gray_stroke":49, "pill_type":50}
         gt_defect = {"good": 0, "bent": 1, "bent_lead": 1, "bent_wire": 1, "manipulated_front": 1, "broken": 2, "broken_large": 2, "broken_small": 2, "broken_teeth": 2, "color": 3, "combined": 4, "contamination": 5, "metal_contamination": 5, "crack": 6, "cut":7, "cut_inner_insulation":7, "cut_lead":7, "cut_outer_insulation":7, "fabric":8, "fabric_border":8, "fabric_interior":8, "faulty_imprint":9, "print":9, "glue":10, "glue_strip":10, "hole":11, "missing":12, "missing_wire":12, "missing_cable":12, "poke":13, "poke_insulation":13, "rough":14, "scratch":15, "scratch_head":15, "scratch_neck":15, "squeeze":16, "squeezed_teeth":16, "thread":17, "thread_side":17, "thread_top":17, "liquid":18, "oil":18, "misplaced":19, "cable_swap":19, "flip":19, "fold":19, "split_teeth":19, "damaged_case":20, "defective":20, "gray_stroke":20, "pill_type":20}  
     elif args.dataset == 'visa':
         train_data = VisaDatasetV2(root=args.train_data_path, transform=preprocess, target_transform=transform)
@@ -125,16 +129,36 @@ def train(args):
     elif args.dataset == 'bus_uclm':
         train_data = BUSUCLMDataset(root=args.train_data_path, transform=preprocess, target_transform=transform, aug_rate=args.aug_rate, mode='test')
         gt_defect = {'good': 0, 'benign': 1, 'malign': 2}   
-        
+    elif args.dataset == 'colondb':
+        train_data = ColonDBDataset(root=args.train_data_path, transform=preprocess, target_transform=transform, aug_rate=args.aug_rate, mode='test')
+        gt_defect = {'good': 0, 'anomalous': 1}  
+    elif args.dataset == 'isic':
+        train_data = ISICDataset(root=args.train_data_path, transform=preprocess, target_transform=transform, aug_rate=args.aug_rate, mode='test')
+        gt_defect = {'good': 0, 'lesion': 1}  
+    elif args.dataset == 'brainmri':
+        train_data = BrainMRIDataset(root=args.train_data_path, transform=preprocess, target_transform=transform, aug_rate=args.aug_rate, mode='test')
+        gt_defect = {'normal': 0, 'anomalous': 1}  
+    elif args.dataset == 'chexpert':
+        train_data = ChexpertDataset(root=args.train_data_path, transform=preprocess, target_transform=transform, aug_rate=args.aug_rate, mode='test')
+        gt_defect = {'no_findings': 0, 'enlarged_cardiomediastinum': 1, 'cardiomegaly': 2, 'lung_opacity': 3, 'lung_lesion': 4, 'enlarged_cardiomediastinum_cardiomegaly': 5, 'enlarged_cardiomediastinum_lung_opacity': 6, 'enlarged_cardiomediastinum_cardiomegaly_lung_opacity': 7, 'enlarged_cardiomediastinum_lung_opacity_lung_lesion': 8}   
 
 
     train_dataloader = torch.utils.data.DataLoader(train_data, batch_size=batch_size, shuffle=True)
 
     # linear layer
-    trainable_layer = LinearLayer(model_configs['vision_cfg']['width'], model_configs['embed_dim'],
+    if args.layer == "linear" :
+        trainable_layer = LinearLayer(model_configs['vision_cfg']['width'], model_configs['embed_dim'],
+                                len(args.features_list), args.model).to(device)
+    else :
+        trainable_layer = MLPLayerWrapper(model_configs['vision_cfg']['width'], model_configs['embed_dim'],
                                 len(args.features_list), args.model).to(device)
 
     optimizer = torch.optim.Adam(list(trainable_layer.parameters()), lr=learning_rate, betas=(0.5, 0.999))
+    #optimizer = torch.optim.Adam(
+    #    list(trainable_layer.parameters()) +
+    #    [p for p in model.parameters() if p.requires_grad],
+    #    lr=learning_rate
+    #)
 
     # losses
     loss_focal = FocalLoss()
@@ -154,16 +178,27 @@ def train(args):
             text_prompts = encode_text_with_prompt_ensemble_covid19(model, obj_list, tokenizer, device)
         elif args.dataset == 'bus_uclm':
             text_prompts = encode_text_with_prompt_ensemble_bus_uclm(model, obj_list, tokenizer, device)
+        elif args.dataset == 'colondb':
+            text_prompts = encode_text_with_prompt_ensemble_colon_db(model, obj_list, tokenizer, device)
+        elif args.dataset == 'brainmri':
+            text_prompts = encode_text_with_prompt_ensemble_brainmri(model, obj_list, tokenizer, device)
+        elif args.dataset == 'isic':
+            text_prompts = encode_text_with_prompt_ensemble_isic(model, obj_list, tokenizer, device)
+        elif args.dataset == 'chexpert' :
+            text_prompts = encode_text_with_prompt_ensemble_chexpert(model, obj_list, tokenizer, device)
+
 
     for epoch in range(epochs):
         print("EPOCH = ", epoch)
         loss_list = []
         idx = 0
+        global_loss = 0
         for items in tqdm(train_dataloader):
             idx += 1
             image = items['img'].to(device)
             paths = items['img_path']
             cls_name = items['cls_name']
+            label = items['anomaly']
 
             # new GT data
             if args.dataset == 'mvtec':
@@ -174,9 +209,10 @@ def train(args):
             elif args.dataset == 'visa':
                 defect_cls = items['defect_cls']
                 cls_id = [gt_defect[name] for name in defect_cls]
-            elif args.dataset == 'brisc2025' or args.dataset == 'covid19' or args.dataset == 'bus_uclm':
+            elif args.dataset in ['brisc2025', 'covid19', 'bus_uclm', 'colondb', 'isic', 'brainmri', 'chexpert'] :
                 specie_name = items['specie_name']
                 cls_id = [gt_defect[name] for name in specie_name]
+                #cls_id_tensor = torch.tensor(cls_id).to(device)
 
 
             with torch.cuda.amp.autocast():
@@ -187,10 +223,13 @@ def train(args):
                     text_features = []
                     for cls in cls_name:
                         text_features.append(text_prompts[cls])
-                        
+                            
                     text_features = torch.stack(text_features, dim=0)
                 # pixel level
-                patch_tokens = trainable_layer(patch_tokens) # [4, 1, 1370]         
+                patch_tokens = trainable_layer(patch_tokens) # [4, 1, 1370]    
+                if args.loss == "global" : #global loss  
+                    text_probs = image_features.unsqueeze(1) @ text_features
+                    text_probs = text_probs[:, 0, ...]/0.07
 
                 anomaly_maps = []
                 for layer in range(len(patch_tokens)):
@@ -218,6 +257,10 @@ def train(args):
                 loss += loss_focal(anomaly_maps[num], gt) # a->xyz b->abc 21, 518,518
                 loss += loss_dice(torch.sum(anomaly_maps[num][:, 1:, :, :], dim=1), gt_b)
 
+            if args.loss == "global" :
+                #global_loss = F.cross_entropy(global_logits, cls_id_tensor)
+                global_loss = F.cross_entropy(text_probs, label.long().cuda())
+                loss = loss * 4.0 + global_loss
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
@@ -230,7 +273,10 @@ def train(args):
         # save model
         if (epoch + 1) % args.save_freq == 0:
             ckp_path = os.path.join(save_path, 'epoch_' + str(epoch + 1) + '.pth')
-            torch.save({'trainable_linearlayer': trainable_layer.state_dict()}, ckp_path)
+            if args.layer == "linear" :
+                torch.save({'trainable_linearlayer': trainable_layer.state_dict()}, ckp_path)
+            else :
+                torch.save({'trainable_mlplayer': trainable_layer.state_dict()}, ckp_path)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser("MultiADS", add_help=True)
@@ -245,13 +291,15 @@ if __name__ == '__main__':
     parser.add_argument("--features_list", type=int, nargs="+", default=[6, 12, 18, 24], help="features used")
     # hyper-parameter
     parser.add_argument("--epoch", type=int, default=10, help="epochs")
-    parser.add_argument("--learning_rate", type=float, default=0.001, help="learning rate")
+    parser.add_argument("--learning_rate", type=float, default=0.001, help="learning rate") # changed 0.001
     parser.add_argument("--batch_size", type=int, default=8, help="batch size")
     parser.add_argument("--image_size", type=int, default=518, help="image size")
     parser.add_argument("--aug_rate", type=float, default=0.2, help="image size")
     parser.add_argument("--print_freq", type=int, default=1, help="print frequency")
     parser.add_argument("--save_freq", type=int, default=1, help="save frequency")
     parser.add_argument("--seed", type=int, default=42, help="random seed")
+    parser.add_argument("--loss", type=str, default="local", help="loss type")
+    parser.add_argument("--layer", type=str, default="linear", help="layer type")
     args = parser.parse_args()
 
     # setup_seed(111)

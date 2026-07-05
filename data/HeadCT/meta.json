@@ -1,0 +1,1407 @@
+{
+    "train": {},
+    "test": {
+        "brain": [
+            {
+                "img_path": "brain/test/defect/000.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/001.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/002.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/003.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/004.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/005.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/006.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/007.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/008.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/009.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/010.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/011.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/012.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/013.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/014.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/015.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/016.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/017.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/018.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/019.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/020.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/021.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/022.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/023.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/024.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/025.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/026.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/027.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/028.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/029.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/030.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/031.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/032.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/033.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/034.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/035.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/036.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/037.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/038.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/039.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/040.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/041.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/042.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/043.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/044.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/045.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/046.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/047.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/048.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/049.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/050.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/051.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/052.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/053.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/054.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/055.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/056.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/057.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/058.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/059.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/060.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/061.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/062.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/063.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/064.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/065.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/066.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/067.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/068.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/069.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/070.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/071.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/072.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/073.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/074.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/075.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/076.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/077.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/078.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/079.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/080.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/081.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/082.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/083.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/084.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/085.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/086.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/087.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/088.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/089.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/090.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/091.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/092.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/093.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/094.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/095.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/096.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/097.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/098.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/defect/099.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "brain/test/good/100.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/101.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/102.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/103.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/104.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/105.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/106.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/107.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/108.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/109.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/110.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/111.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/112.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/113.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/114.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/115.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/116.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/117.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/118.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/119.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/120.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/121.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/122.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/123.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/124.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/125.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/126.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/127.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/128.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/129.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/130.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/131.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/132.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/133.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/134.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/135.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/136.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/137.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/138.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/139.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/140.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/141.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/142.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/143.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/144.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/145.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/146.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/147.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/148.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/149.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/150.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/151.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/152.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/153.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/154.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/155.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/156.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/157.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/158.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/159.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/160.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/161.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/162.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/163.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/164.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/165.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/166.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/167.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/168.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/169.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/170.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/171.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/172.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/173.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/174.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/175.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/176.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/177.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/178.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/179.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/180.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/181.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/182.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/183.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/184.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/185.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/186.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/187.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/188.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/189.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/190.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/191.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/192.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/193.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/194.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/195.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/196.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/197.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/198.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            },
+            {
+                "img_path": "brain/test/good/199.png",
+                "mask_path": "",
+                "cls_name": "brain",
+                "specie_name": "normal",
+                "anomaly": 0
+            }
+        ]
+    }
+}

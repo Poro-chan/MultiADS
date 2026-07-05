@@ -1,0 +1,4305 @@
+{
+    "train": {},
+    "test": {
+        "thyroid": [
+            {
+                "img_path": "test-image/0000.jpg",
+                "mask_path": "test-mask/0000.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0001.jpg",
+                "mask_path": "test-mask/0001.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0002.jpg",
+                "mask_path": "test-mask/0002.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0003.jpg",
+                "mask_path": "test-mask/0003.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0004.jpg",
+                "mask_path": "test-mask/0004.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0005.jpg",
+                "mask_path": "test-mask/0005.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0006.jpg",
+                "mask_path": "test-mask/0006.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0007.jpg",
+                "mask_path": "test-mask/0007.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0008.jpg",
+                "mask_path": "test-mask/0008.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0009.jpg",
+                "mask_path": "test-mask/0009.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0010.jpg",
+                "mask_path": "test-mask/0010.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0011.jpg",
+                "mask_path": "test-mask/0011.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0012.jpg",
+                "mask_path": "test-mask/0012.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0013.jpg",
+                "mask_path": "test-mask/0013.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0014.jpg",
+                "mask_path": "test-mask/0014.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0015.jpg",
+                "mask_path": "test-mask/0015.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0016.jpg",
+                "mask_path": "test-mask/0016.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0017.jpg",
+                "mask_path": "test-mask/0017.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0018.jpg",
+                "mask_path": "test-mask/0018.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0019.jpg",
+                "mask_path": "test-mask/0019.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0020.jpg",
+                "mask_path": "test-mask/0020.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0021.jpg",
+                "mask_path": "test-mask/0021.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0022.jpg",
+                "mask_path": "test-mask/0022.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0023.jpg",
+                "mask_path": "test-mask/0023.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0024.jpg",
+                "mask_path": "test-mask/0024.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0025.jpg",
+                "mask_path": "test-mask/0025.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0026.jpg",
+                "mask_path": "test-mask/0026.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0027.jpg",
+                "mask_path": "test-mask/0027.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0028.jpg",
+                "mask_path": "test-mask/0028.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0029.jpg",
+                "mask_path": "test-mask/0029.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0030.jpg",
+                "mask_path": "test-mask/0030.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0031.jpg",
+                "mask_path": "test-mask/0031.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0032.jpg",
+                "mask_path": "test-mask/0032.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0033.jpg",
+                "mask_path": "test-mask/0033.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0034.jpg",
+                "mask_path": "test-mask/0034.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0035.jpg",
+                "mask_path": "test-mask/0035.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0036.jpg",
+                "mask_path": "test-mask/0036.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0037.jpg",
+                "mask_path": "test-mask/0037.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0038.jpg",
+                "mask_path": "test-mask/0038.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0039.jpg",
+                "mask_path": "test-mask/0039.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0040.jpg",
+                "mask_path": "test-mask/0040.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0041.jpg",
+                "mask_path": "test-mask/0041.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0042.jpg",
+                "mask_path": "test-mask/0042.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0043.jpg",
+                "mask_path": "test-mask/0043.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0044.jpg",
+                "mask_path": "test-mask/0044.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0045.jpg",
+                "mask_path": "test-mask/0045.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0046.jpg",
+                "mask_path": "test-mask/0046.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0047.jpg",
+                "mask_path": "test-mask/0047.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0048.jpg",
+                "mask_path": "test-mask/0048.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0049.jpg",
+                "mask_path": "test-mask/0049.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0050.jpg",
+                "mask_path": "test-mask/0050.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0051.jpg",
+                "mask_path": "test-mask/0051.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0052.jpg",
+                "mask_path": "test-mask/0052.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0053.jpg",
+                "mask_path": "test-mask/0053.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0054.jpg",
+                "mask_path": "test-mask/0054.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0055.jpg",
+                "mask_path": "test-mask/0055.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0056.jpg",
+                "mask_path": "test-mask/0056.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0057.jpg",
+                "mask_path": "test-mask/0057.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0058.jpg",
+                "mask_path": "test-mask/0058.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0059.jpg",
+                "mask_path": "test-mask/0059.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0060.jpg",
+                "mask_path": "test-mask/0060.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0061.jpg",
+                "mask_path": "test-mask/0061.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0062.jpg",
+                "mask_path": "test-mask/0062.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0063.jpg",
+                "mask_path": "test-mask/0063.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0064.jpg",
+                "mask_path": "test-mask/0064.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0065.jpg",
+                "mask_path": "test-mask/0065.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0066.jpg",
+                "mask_path": "test-mask/0066.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0067.jpg",
+                "mask_path": "test-mask/0067.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0068.jpg",
+                "mask_path": "test-mask/0068.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0069.jpg",
+                "mask_path": "test-mask/0069.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0070.jpg",
+                "mask_path": "test-mask/0070.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0071.jpg",
+                "mask_path": "test-mask/0071.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0072.jpg",
+                "mask_path": "test-mask/0072.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0073.jpg",
+                "mask_path": "test-mask/0073.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0074.jpg",
+                "mask_path": "test-mask/0074.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0075.jpg",
+                "mask_path": "test-mask/0075.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0076.jpg",
+                "mask_path": "test-mask/0076.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0077.jpg",
+                "mask_path": "test-mask/0077.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0078.jpg",
+                "mask_path": "test-mask/0078.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0079.jpg",
+                "mask_path": "test-mask/0079.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0080.jpg",
+                "mask_path": "test-mask/0080.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0081.jpg",
+                "mask_path": "test-mask/0081.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0082.jpg",
+                "mask_path": "test-mask/0082.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0083.jpg",
+                "mask_path": "test-mask/0083.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0084.jpg",
+                "mask_path": "test-mask/0084.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0085.jpg",
+                "mask_path": "test-mask/0085.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0086.jpg",
+                "mask_path": "test-mask/0086.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0087.jpg",
+                "mask_path": "test-mask/0087.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0088.jpg",
+                "mask_path": "test-mask/0088.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0089.jpg",
+                "mask_path": "test-mask/0089.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0090.jpg",
+                "mask_path": "test-mask/0090.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0091.jpg",
+                "mask_path": "test-mask/0091.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0092.jpg",
+                "mask_path": "test-mask/0092.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0093.jpg",
+                "mask_path": "test-mask/0093.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0094.jpg",
+                "mask_path": "test-mask/0094.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0095.jpg",
+                "mask_path": "test-mask/0095.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0096.jpg",
+                "mask_path": "test-mask/0096.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0097.jpg",
+                "mask_path": "test-mask/0097.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0098.jpg",
+                "mask_path": "test-mask/0098.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0099.jpg",
+                "mask_path": "test-mask/0099.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0100.jpg",
+                "mask_path": "test-mask/0100.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0101.jpg",
+                "mask_path": "test-mask/0101.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0102.jpg",
+                "mask_path": "test-mask/0102.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0103.jpg",
+                "mask_path": "test-mask/0103.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0104.jpg",
+                "mask_path": "test-mask/0104.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0105.jpg",
+                "mask_path": "test-mask/0105.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0106.jpg",
+                "mask_path": "test-mask/0106.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0107.jpg",
+                "mask_path": "test-mask/0107.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0108.jpg",
+                "mask_path": "test-mask/0108.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0109.jpg",
+                "mask_path": "test-mask/0109.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0110.jpg",
+                "mask_path": "test-mask/0110.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0111.jpg",
+                "mask_path": "test-mask/0111.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0112.jpg",
+                "mask_path": "test-mask/0112.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0113.jpg",
+                "mask_path": "test-mask/0113.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0114.jpg",
+                "mask_path": "test-mask/0114.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0115.jpg",
+                "mask_path": "test-mask/0115.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0116.jpg",
+                "mask_path": "test-mask/0116.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0117.jpg",
+                "mask_path": "test-mask/0117.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0118.jpg",
+                "mask_path": "test-mask/0118.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0119.jpg",
+                "mask_path": "test-mask/0119.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0120.jpg",
+                "mask_path": "test-mask/0120.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0121.jpg",
+                "mask_path": "test-mask/0121.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0122.jpg",
+                "mask_path": "test-mask/0122.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0123.jpg",
+                "mask_path": "test-mask/0123.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0124.jpg",
+                "mask_path": "test-mask/0124.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0125.jpg",
+                "mask_path": "test-mask/0125.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0126.jpg",
+                "mask_path": "test-mask/0126.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0127.jpg",
+                "mask_path": "test-mask/0127.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0128.jpg",
+                "mask_path": "test-mask/0128.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0129.jpg",
+                "mask_path": "test-mask/0129.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0130.jpg",
+                "mask_path": "test-mask/0130.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0131.jpg",
+                "mask_path": "test-mask/0131.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0132.jpg",
+                "mask_path": "test-mask/0132.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0133.jpg",
+                "mask_path": "test-mask/0133.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0134.jpg",
+                "mask_path": "test-mask/0134.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0135.jpg",
+                "mask_path": "test-mask/0135.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0136.jpg",
+                "mask_path": "test-mask/0136.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0137.jpg",
+                "mask_path": "test-mask/0137.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0138.jpg",
+                "mask_path": "test-mask/0138.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0139.jpg",
+                "mask_path": "test-mask/0139.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0140.jpg",
+                "mask_path": "test-mask/0140.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0141.jpg",
+                "mask_path": "test-mask/0141.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0142.jpg",
+                "mask_path": "test-mask/0142.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0143.jpg",
+                "mask_path": "test-mask/0143.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0144.jpg",
+                "mask_path": "test-mask/0144.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0145.jpg",
+                "mask_path": "test-mask/0145.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0146.jpg",
+                "mask_path": "test-mask/0146.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0147.jpg",
+                "mask_path": "test-mask/0147.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0148.jpg",
+                "mask_path": "test-mask/0148.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0149.jpg",
+                "mask_path": "test-mask/0149.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0150.jpg",
+                "mask_path": "test-mask/0150.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0151.jpg",
+                "mask_path": "test-mask/0151.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0152.jpg",
+                "mask_path": "test-mask/0152.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0153.jpg",
+                "mask_path": "test-mask/0153.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0154.jpg",
+                "mask_path": "test-mask/0154.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0155.jpg",
+                "mask_path": "test-mask/0155.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0156.jpg",
+                "mask_path": "test-mask/0156.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0157.jpg",
+                "mask_path": "test-mask/0157.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0158.jpg",
+                "mask_path": "test-mask/0158.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0159.jpg",
+                "mask_path": "test-mask/0159.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0160.jpg",
+                "mask_path": "test-mask/0160.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0161.jpg",
+                "mask_path": "test-mask/0161.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0162.jpg",
+                "mask_path": "test-mask/0162.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0163.jpg",
+                "mask_path": "test-mask/0163.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0164.jpg",
+                "mask_path": "test-mask/0164.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0165.jpg",
+                "mask_path": "test-mask/0165.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0166.jpg",
+                "mask_path": "test-mask/0166.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0167.jpg",
+                "mask_path": "test-mask/0167.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0168.jpg",
+                "mask_path": "test-mask/0168.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0169.jpg",
+                "mask_path": "test-mask/0169.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0170.jpg",
+                "mask_path": "test-mask/0170.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0171.jpg",
+                "mask_path": "test-mask/0171.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0172.jpg",
+                "mask_path": "test-mask/0172.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0173.jpg",
+                "mask_path": "test-mask/0173.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0174.jpg",
+                "mask_path": "test-mask/0174.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0175.jpg",
+                "mask_path": "test-mask/0175.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0176.jpg",
+                "mask_path": "test-mask/0176.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0177.jpg",
+                "mask_path": "test-mask/0177.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0178.jpg",
+                "mask_path": "test-mask/0178.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0179.jpg",
+                "mask_path": "test-mask/0179.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0180.jpg",
+                "mask_path": "test-mask/0180.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0181.jpg",
+                "mask_path": "test-mask/0181.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0182.jpg",
+                "mask_path": "test-mask/0182.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0183.jpg",
+                "mask_path": "test-mask/0183.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0184.jpg",
+                "mask_path": "test-mask/0184.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0185.jpg",
+                "mask_path": "test-mask/0185.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0186.jpg",
+                "mask_path": "test-mask/0186.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0187.jpg",
+                "mask_path": "test-mask/0187.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0188.jpg",
+                "mask_path": "test-mask/0188.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0189.jpg",
+                "mask_path": "test-mask/0189.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0190.jpg",
+                "mask_path": "test-mask/0190.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0191.jpg",
+                "mask_path": "test-mask/0191.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0192.jpg",
+                "mask_path": "test-mask/0192.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0193.jpg",
+                "mask_path": "test-mask/0193.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0194.jpg",
+                "mask_path": "test-mask/0194.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0195.jpg",
+                "mask_path": "test-mask/0195.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0196.jpg",
+                "mask_path": "test-mask/0196.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0197.jpg",
+                "mask_path": "test-mask/0197.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0198.jpg",
+                "mask_path": "test-mask/0198.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0199.jpg",
+                "mask_path": "test-mask/0199.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0200.jpg",
+                "mask_path": "test-mask/0200.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0201.jpg",
+                "mask_path": "test-mask/0201.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0202.jpg",
+                "mask_path": "test-mask/0202.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0203.jpg",
+                "mask_path": "test-mask/0203.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0204.jpg",
+                "mask_path": "test-mask/0204.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0205.jpg",
+                "mask_path": "test-mask/0205.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0206.jpg",
+                "mask_path": "test-mask/0206.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0207.jpg",
+                "mask_path": "test-mask/0207.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0208.jpg",
+                "mask_path": "test-mask/0208.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0209.jpg",
+                "mask_path": "test-mask/0209.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0210.jpg",
+                "mask_path": "test-mask/0210.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0211.jpg",
+                "mask_path": "test-mask/0211.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0212.jpg",
+                "mask_path": "test-mask/0212.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0213.jpg",
+                "mask_path": "test-mask/0213.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0214.jpg",
+                "mask_path": "test-mask/0214.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0215.jpg",
+                "mask_path": "test-mask/0215.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0216.jpg",
+                "mask_path": "test-mask/0216.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0217.jpg",
+                "mask_path": "test-mask/0217.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0218.jpg",
+                "mask_path": "test-mask/0218.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0219.jpg",
+                "mask_path": "test-mask/0219.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0220.jpg",
+                "mask_path": "test-mask/0220.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0221.jpg",
+                "mask_path": "test-mask/0221.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0222.jpg",
+                "mask_path": "test-mask/0222.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0223.jpg",
+                "mask_path": "test-mask/0223.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0224.jpg",
+                "mask_path": "test-mask/0224.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0225.jpg",
+                "mask_path": "test-mask/0225.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0226.jpg",
+                "mask_path": "test-mask/0226.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0227.jpg",
+                "mask_path": "test-mask/0227.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0228.jpg",
+                "mask_path": "test-mask/0228.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0229.jpg",
+                "mask_path": "test-mask/0229.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0230.jpg",
+                "mask_path": "test-mask/0230.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0231.jpg",
+                "mask_path": "test-mask/0231.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0232.jpg",
+                "mask_path": "test-mask/0232.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0233.jpg",
+                "mask_path": "test-mask/0233.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0234.jpg",
+                "mask_path": "test-mask/0234.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0235.jpg",
+                "mask_path": "test-mask/0235.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0236.jpg",
+                "mask_path": "test-mask/0236.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0237.jpg",
+                "mask_path": "test-mask/0237.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0238.jpg",
+                "mask_path": "test-mask/0238.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0239.jpg",
+                "mask_path": "test-mask/0239.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0240.jpg",
+                "mask_path": "test-mask/0240.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0241.jpg",
+                "mask_path": "test-mask/0241.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0242.jpg",
+                "mask_path": "test-mask/0242.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0243.jpg",
+                "mask_path": "test-mask/0243.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0244.jpg",
+                "mask_path": "test-mask/0244.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0245.jpg",
+                "mask_path": "test-mask/0245.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0246.jpg",
+                "mask_path": "test-mask/0246.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0247.jpg",
+                "mask_path": "test-mask/0247.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0248.jpg",
+                "mask_path": "test-mask/0248.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0249.jpg",
+                "mask_path": "test-mask/0249.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0250.jpg",
+                "mask_path": "test-mask/0250.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0251.jpg",
+                "mask_path": "test-mask/0251.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0252.jpg",
+                "mask_path": "test-mask/0252.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0253.jpg",
+                "mask_path": "test-mask/0253.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0254.jpg",
+                "mask_path": "test-mask/0254.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0255.jpg",
+                "mask_path": "test-mask/0255.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0256.jpg",
+                "mask_path": "test-mask/0256.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0257.jpg",
+                "mask_path": "test-mask/0257.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0258.jpg",
+                "mask_path": "test-mask/0258.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0259.jpg",
+                "mask_path": "test-mask/0259.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0260.jpg",
+                "mask_path": "test-mask/0260.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0261.jpg",
+                "mask_path": "test-mask/0261.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0262.jpg",
+                "mask_path": "test-mask/0262.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0263.jpg",
+                "mask_path": "test-mask/0263.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0264.jpg",
+                "mask_path": "test-mask/0264.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0265.jpg",
+                "mask_path": "test-mask/0265.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0266.jpg",
+                "mask_path": "test-mask/0266.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0267.jpg",
+                "mask_path": "test-mask/0267.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0268.jpg",
+                "mask_path": "test-mask/0268.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0269.jpg",
+                "mask_path": "test-mask/0269.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0270.jpg",
+                "mask_path": "test-mask/0270.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0271.jpg",
+                "mask_path": "test-mask/0271.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0272.jpg",
+                "mask_path": "test-mask/0272.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0273.jpg",
+                "mask_path": "test-mask/0273.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0274.jpg",
+                "mask_path": "test-mask/0274.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0275.jpg",
+                "mask_path": "test-mask/0275.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0276.jpg",
+                "mask_path": "test-mask/0276.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0277.jpg",
+                "mask_path": "test-mask/0277.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0278.jpg",
+                "mask_path": "test-mask/0278.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0279.jpg",
+                "mask_path": "test-mask/0279.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0280.jpg",
+                "mask_path": "test-mask/0280.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0281.jpg",
+                "mask_path": "test-mask/0281.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0282.jpg",
+                "mask_path": "test-mask/0282.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0283.jpg",
+                "mask_path": "test-mask/0283.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0284.jpg",
+                "mask_path": "test-mask/0284.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0285.jpg",
+                "mask_path": "test-mask/0285.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0286.jpg",
+                "mask_path": "test-mask/0286.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0287.jpg",
+                "mask_path": "test-mask/0287.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0288.jpg",
+                "mask_path": "test-mask/0288.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0289.jpg",
+                "mask_path": "test-mask/0289.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0290.jpg",
+                "mask_path": "test-mask/0290.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0291.jpg",
+                "mask_path": "test-mask/0291.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0292.jpg",
+                "mask_path": "test-mask/0292.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0293.jpg",
+                "mask_path": "test-mask/0293.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0294.jpg",
+                "mask_path": "test-mask/0294.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0295.jpg",
+                "mask_path": "test-mask/0295.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0296.jpg",
+                "mask_path": "test-mask/0296.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0297.jpg",
+                "mask_path": "test-mask/0297.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0298.jpg",
+                "mask_path": "test-mask/0298.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0299.jpg",
+                "mask_path": "test-mask/0299.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0300.jpg",
+                "mask_path": "test-mask/0300.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0301.jpg",
+                "mask_path": "test-mask/0301.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0302.jpg",
+                "mask_path": "test-mask/0302.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0303.jpg",
+                "mask_path": "test-mask/0303.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0304.jpg",
+                "mask_path": "test-mask/0304.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0305.jpg",
+                "mask_path": "test-mask/0305.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0306.jpg",
+                "mask_path": "test-mask/0306.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0307.jpg",
+                "mask_path": "test-mask/0307.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0308.jpg",
+                "mask_path": "test-mask/0308.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0309.jpg",
+                "mask_path": "test-mask/0309.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0310.jpg",
+                "mask_path": "test-mask/0310.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0311.jpg",
+                "mask_path": "test-mask/0311.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0312.jpg",
+                "mask_path": "test-mask/0312.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0313.jpg",
+                "mask_path": "test-mask/0313.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0314.jpg",
+                "mask_path": "test-mask/0314.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0315.jpg",
+                "mask_path": "test-mask/0315.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0316.jpg",
+                "mask_path": "test-mask/0316.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0317.jpg",
+                "mask_path": "test-mask/0317.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0318.jpg",
+                "mask_path": "test-mask/0318.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0319.jpg",
+                "mask_path": "test-mask/0319.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0320.jpg",
+                "mask_path": "test-mask/0320.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0321.jpg",
+                "mask_path": "test-mask/0321.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0322.jpg",
+                "mask_path": "test-mask/0322.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0323.jpg",
+                "mask_path": "test-mask/0323.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0324.jpg",
+                "mask_path": "test-mask/0324.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0325.jpg",
+                "mask_path": "test-mask/0325.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0326.jpg",
+                "mask_path": "test-mask/0326.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0327.jpg",
+                "mask_path": "test-mask/0327.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0328.jpg",
+                "mask_path": "test-mask/0328.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0329.jpg",
+                "mask_path": "test-mask/0329.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0330.jpg",
+                "mask_path": "test-mask/0330.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0331.jpg",
+                "mask_path": "test-mask/0331.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0332.jpg",
+                "mask_path": "test-mask/0332.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0333.jpg",
+                "mask_path": "test-mask/0333.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0334.jpg",
+                "mask_path": "test-mask/0334.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0335.jpg",
+                "mask_path": "test-mask/0335.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0336.jpg",
+                "mask_path": "test-mask/0336.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0337.jpg",
+                "mask_path": "test-mask/0337.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0338.jpg",
+                "mask_path": "test-mask/0338.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0339.jpg",
+                "mask_path": "test-mask/0339.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0340.jpg",
+                "mask_path": "test-mask/0340.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0341.jpg",
+                "mask_path": "test-mask/0341.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0342.jpg",
+                "mask_path": "test-mask/0342.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0343.jpg",
+                "mask_path": "test-mask/0343.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0344.jpg",
+                "mask_path": "test-mask/0344.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0345.jpg",
+                "mask_path": "test-mask/0345.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0346.jpg",
+                "mask_path": "test-mask/0346.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0347.jpg",
+                "mask_path": "test-mask/0347.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0348.jpg",
+                "mask_path": "test-mask/0348.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0349.jpg",
+                "mask_path": "test-mask/0349.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0350.jpg",
+                "mask_path": "test-mask/0350.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0351.jpg",
+                "mask_path": "test-mask/0351.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0352.jpg",
+                "mask_path": "test-mask/0352.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0353.jpg",
+                "mask_path": "test-mask/0353.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0354.jpg",
+                "mask_path": "test-mask/0354.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0355.jpg",
+                "mask_path": "test-mask/0355.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0356.jpg",
+                "mask_path": "test-mask/0356.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0357.jpg",
+                "mask_path": "test-mask/0357.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0358.jpg",
+                "mask_path": "test-mask/0358.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0359.jpg",
+                "mask_path": "test-mask/0359.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0360.jpg",
+                "mask_path": "test-mask/0360.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0361.jpg",
+                "mask_path": "test-mask/0361.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0362.jpg",
+                "mask_path": "test-mask/0362.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0363.jpg",
+                "mask_path": "test-mask/0363.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0364.jpg",
+                "mask_path": "test-mask/0364.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0365.jpg",
+                "mask_path": "test-mask/0365.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0366.jpg",
+                "mask_path": "test-mask/0366.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0367.jpg",
+                "mask_path": "test-mask/0367.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0368.jpg",
+                "mask_path": "test-mask/0368.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0369.jpg",
+                "mask_path": "test-mask/0369.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0370.jpg",
+                "mask_path": "test-mask/0370.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0371.jpg",
+                "mask_path": "test-mask/0371.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0372.jpg",
+                "mask_path": "test-mask/0372.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0373.jpg",
+                "mask_path": "test-mask/0373.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0374.jpg",
+                "mask_path": "test-mask/0374.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0375.jpg",
+                "mask_path": "test-mask/0375.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0376.jpg",
+                "mask_path": "test-mask/0376.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0377.jpg",
+                "mask_path": "test-mask/0377.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0378.jpg",
+                "mask_path": "test-mask/0378.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0379.jpg",
+                "mask_path": "test-mask/0379.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0380.jpg",
+                "mask_path": "test-mask/0380.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0381.jpg",
+                "mask_path": "test-mask/0381.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0382.jpg",
+                "mask_path": "test-mask/0382.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0383.jpg",
+                "mask_path": "test-mask/0383.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0384.jpg",
+                "mask_path": "test-mask/0384.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0385.jpg",
+                "mask_path": "test-mask/0385.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0386.jpg",
+                "mask_path": "test-mask/0386.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0387.jpg",
+                "mask_path": "test-mask/0387.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0388.jpg",
+                "mask_path": "test-mask/0388.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0389.jpg",
+                "mask_path": "test-mask/0389.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0390.jpg",
+                "mask_path": "test-mask/0390.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0391.jpg",
+                "mask_path": "test-mask/0391.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0392.jpg",
+                "mask_path": "test-mask/0392.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0393.jpg",
+                "mask_path": "test-mask/0393.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0394.jpg",
+                "mask_path": "test-mask/0394.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0395.jpg",
+                "mask_path": "test-mask/0395.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0396.jpg",
+                "mask_path": "test-mask/0396.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0397.jpg",
+                "mask_path": "test-mask/0397.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0398.jpg",
+                "mask_path": "test-mask/0398.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0399.jpg",
+                "mask_path": "test-mask/0399.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0400.jpg",
+                "mask_path": "test-mask/0400.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0401.jpg",
+                "mask_path": "test-mask/0401.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0402.jpg",
+                "mask_path": "test-mask/0402.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0403.jpg",
+                "mask_path": "test-mask/0403.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0404.jpg",
+                "mask_path": "test-mask/0404.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0405.jpg",
+                "mask_path": "test-mask/0405.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0406.jpg",
+                "mask_path": "test-mask/0406.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0407.jpg",
+                "mask_path": "test-mask/0407.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0408.jpg",
+                "mask_path": "test-mask/0408.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0409.jpg",
+                "mask_path": "test-mask/0409.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0410.jpg",
+                "mask_path": "test-mask/0410.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0411.jpg",
+                "mask_path": "test-mask/0411.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0412.jpg",
+                "mask_path": "test-mask/0412.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0413.jpg",
+                "mask_path": "test-mask/0413.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0414.jpg",
+                "mask_path": "test-mask/0414.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0415.jpg",
+                "mask_path": "test-mask/0415.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0416.jpg",
+                "mask_path": "test-mask/0416.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0417.jpg",
+                "mask_path": "test-mask/0417.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0418.jpg",
+                "mask_path": "test-mask/0418.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0419.jpg",
+                "mask_path": "test-mask/0419.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0420.jpg",
+                "mask_path": "test-mask/0420.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0421.jpg",
+                "mask_path": "test-mask/0421.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0422.jpg",
+                "mask_path": "test-mask/0422.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0423.jpg",
+                "mask_path": "test-mask/0423.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0424.jpg",
+                "mask_path": "test-mask/0424.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0425.jpg",
+                "mask_path": "test-mask/0425.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0426.jpg",
+                "mask_path": "test-mask/0426.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0427.jpg",
+                "mask_path": "test-mask/0427.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0428.jpg",
+                "mask_path": "test-mask/0428.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0429.jpg",
+                "mask_path": "test-mask/0429.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0430.jpg",
+                "mask_path": "test-mask/0430.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0431.jpg",
+                "mask_path": "test-mask/0431.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0432.jpg",
+                "mask_path": "test-mask/0432.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0433.jpg",
+                "mask_path": "test-mask/0433.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0434.jpg",
+                "mask_path": "test-mask/0434.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0435.jpg",
+                "mask_path": "test-mask/0435.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0436.jpg",
+                "mask_path": "test-mask/0436.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0437.jpg",
+                "mask_path": "test-mask/0437.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0438.jpg",
+                "mask_path": "test-mask/0438.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0439.jpg",
+                "mask_path": "test-mask/0439.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0440.jpg",
+                "mask_path": "test-mask/0440.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0441.jpg",
+                "mask_path": "test-mask/0441.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0442.jpg",
+                "mask_path": "test-mask/0442.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0443.jpg",
+                "mask_path": "test-mask/0443.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0444.jpg",
+                "mask_path": "test-mask/0444.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0445.jpg",
+                "mask_path": "test-mask/0445.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0446.jpg",
+                "mask_path": "test-mask/0446.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0447.jpg",
+                "mask_path": "test-mask/0447.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0448.jpg",
+                "mask_path": "test-mask/0448.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0449.jpg",
+                "mask_path": "test-mask/0449.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0450.jpg",
+                "mask_path": "test-mask/0450.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0451.jpg",
+                "mask_path": "test-mask/0451.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0452.jpg",
+                "mask_path": "test-mask/0452.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0453.jpg",
+                "mask_path": "test-mask/0453.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0454.jpg",
+                "mask_path": "test-mask/0454.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0455.jpg",
+                "mask_path": "test-mask/0455.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0456.jpg",
+                "mask_path": "test-mask/0456.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0457.jpg",
+                "mask_path": "test-mask/0457.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0458.jpg",
+                "mask_path": "test-mask/0458.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0459.jpg",
+                "mask_path": "test-mask/0459.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0460.jpg",
+                "mask_path": "test-mask/0460.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0461.jpg",
+                "mask_path": "test-mask/0461.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0462.jpg",
+                "mask_path": "test-mask/0462.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0463.jpg",
+                "mask_path": "test-mask/0463.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0464.jpg",
+                "mask_path": "test-mask/0464.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0465.jpg",
+                "mask_path": "test-mask/0465.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0466.jpg",
+                "mask_path": "test-mask/0466.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0467.jpg",
+                "mask_path": "test-mask/0467.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0468.jpg",
+                "mask_path": "test-mask/0468.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0469.jpg",
+                "mask_path": "test-mask/0469.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0470.jpg",
+                "mask_path": "test-mask/0470.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0471.jpg",
+                "mask_path": "test-mask/0471.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0472.jpg",
+                "mask_path": "test-mask/0472.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0473.jpg",
+                "mask_path": "test-mask/0473.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0474.jpg",
+                "mask_path": "test-mask/0474.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0475.jpg",
+                "mask_path": "test-mask/0475.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0476.jpg",
+                "mask_path": "test-mask/0476.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0477.jpg",
+                "mask_path": "test-mask/0477.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0478.jpg",
+                "mask_path": "test-mask/0478.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0479.jpg",
+                "mask_path": "test-mask/0479.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0480.jpg",
+                "mask_path": "test-mask/0480.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0481.jpg",
+                "mask_path": "test-mask/0481.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0482.jpg",
+                "mask_path": "test-mask/0482.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0483.jpg",
+                "mask_path": "test-mask/0483.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0484.jpg",
+                "mask_path": "test-mask/0484.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0485.jpg",
+                "mask_path": "test-mask/0485.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0486.jpg",
+                "mask_path": "test-mask/0486.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0487.jpg",
+                "mask_path": "test-mask/0487.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0488.jpg",
+                "mask_path": "test-mask/0488.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0489.jpg",
+                "mask_path": "test-mask/0489.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0490.jpg",
+                "mask_path": "test-mask/0490.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0491.jpg",
+                "mask_path": "test-mask/0491.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0492.jpg",
+                "mask_path": "test-mask/0492.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0493.jpg",
+                "mask_path": "test-mask/0493.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0494.jpg",
+                "mask_path": "test-mask/0494.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0495.jpg",
+                "mask_path": "test-mask/0495.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0496.jpg",
+                "mask_path": "test-mask/0496.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0497.jpg",
+                "mask_path": "test-mask/0497.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0498.jpg",
+                "mask_path": "test-mask/0498.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0499.jpg",
+                "mask_path": "test-mask/0499.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0500.jpg",
+                "mask_path": "test-mask/0500.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0501.jpg",
+                "mask_path": "test-mask/0501.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0502.jpg",
+                "mask_path": "test-mask/0502.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0503.jpg",
+                "mask_path": "test-mask/0503.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0504.jpg",
+                "mask_path": "test-mask/0504.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0505.jpg",
+                "mask_path": "test-mask/0505.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0506.jpg",
+                "mask_path": "test-mask/0506.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0507.jpg",
+                "mask_path": "test-mask/0507.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0508.jpg",
+                "mask_path": "test-mask/0508.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0509.jpg",
+                "mask_path": "test-mask/0509.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0510.jpg",
+                "mask_path": "test-mask/0510.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0511.jpg",
+                "mask_path": "test-mask/0511.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0512.jpg",
+                "mask_path": "test-mask/0512.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0513.jpg",
+                "mask_path": "test-mask/0513.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0514.jpg",
+                "mask_path": "test-mask/0514.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0515.jpg",
+                "mask_path": "test-mask/0515.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0516.jpg",
+                "mask_path": "test-mask/0516.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0517.jpg",
+                "mask_path": "test-mask/0517.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0518.jpg",
+                "mask_path": "test-mask/0518.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0519.jpg",
+                "mask_path": "test-mask/0519.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0520.jpg",
+                "mask_path": "test-mask/0520.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0521.jpg",
+                "mask_path": "test-mask/0521.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0522.jpg",
+                "mask_path": "test-mask/0522.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0523.jpg",
+                "mask_path": "test-mask/0523.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0524.jpg",
+                "mask_path": "test-mask/0524.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0525.jpg",
+                "mask_path": "test-mask/0525.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0526.jpg",
+                "mask_path": "test-mask/0526.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0527.jpg",
+                "mask_path": "test-mask/0527.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0528.jpg",
+                "mask_path": "test-mask/0528.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0529.jpg",
+                "mask_path": "test-mask/0529.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0530.jpg",
+                "mask_path": "test-mask/0530.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0531.jpg",
+                "mask_path": "test-mask/0531.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0532.jpg",
+                "mask_path": "test-mask/0532.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0533.jpg",
+                "mask_path": "test-mask/0533.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0534.jpg",
+                "mask_path": "test-mask/0534.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0535.jpg",
+                "mask_path": "test-mask/0535.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0536.jpg",
+                "mask_path": "test-mask/0536.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0537.jpg",
+                "mask_path": "test-mask/0537.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0538.jpg",
+                "mask_path": "test-mask/0538.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0539.jpg",
+                "mask_path": "test-mask/0539.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0540.jpg",
+                "mask_path": "test-mask/0540.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0541.jpg",
+                "mask_path": "test-mask/0541.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0542.jpg",
+                "mask_path": "test-mask/0542.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0543.jpg",
+                "mask_path": "test-mask/0543.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0544.jpg",
+                "mask_path": "test-mask/0544.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0545.jpg",
+                "mask_path": "test-mask/0545.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0546.jpg",
+                "mask_path": "test-mask/0546.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0547.jpg",
+                "mask_path": "test-mask/0547.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0548.jpg",
+                "mask_path": "test-mask/0548.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0549.jpg",
+                "mask_path": "test-mask/0549.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0550.jpg",
+                "mask_path": "test-mask/0550.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0551.jpg",
+                "mask_path": "test-mask/0551.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0552.jpg",
+                "mask_path": "test-mask/0552.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0553.jpg",
+                "mask_path": "test-mask/0553.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0554.jpg",
+                "mask_path": "test-mask/0554.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0555.jpg",
+                "mask_path": "test-mask/0555.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0556.jpg",
+                "mask_path": "test-mask/0556.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0557.jpg",
+                "mask_path": "test-mask/0557.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0558.jpg",
+                "mask_path": "test-mask/0558.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0559.jpg",
+                "mask_path": "test-mask/0559.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0560.jpg",
+                "mask_path": "test-mask/0560.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0561.jpg",
+                "mask_path": "test-mask/0561.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0562.jpg",
+                "mask_path": "test-mask/0562.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0563.jpg",
+                "mask_path": "test-mask/0563.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0564.jpg",
+                "mask_path": "test-mask/0564.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0565.jpg",
+                "mask_path": "test-mask/0565.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0566.jpg",
+                "mask_path": "test-mask/0566.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0567.jpg",
+                "mask_path": "test-mask/0567.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0568.jpg",
+                "mask_path": "test-mask/0568.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0569.jpg",
+                "mask_path": "test-mask/0569.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0570.jpg",
+                "mask_path": "test-mask/0570.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0571.jpg",
+                "mask_path": "test-mask/0571.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0572.jpg",
+                "mask_path": "test-mask/0572.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0573.jpg",
+                "mask_path": "test-mask/0573.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0574.jpg",
+                "mask_path": "test-mask/0574.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0575.jpg",
+                "mask_path": "test-mask/0575.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0576.jpg",
+                "mask_path": "test-mask/0576.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0577.jpg",
+                "mask_path": "test-mask/0577.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0578.jpg",
+                "mask_path": "test-mask/0578.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0579.jpg",
+                "mask_path": "test-mask/0579.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0580.jpg",
+                "mask_path": "test-mask/0580.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0581.jpg",
+                "mask_path": "test-mask/0581.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0582.jpg",
+                "mask_path": "test-mask/0582.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0583.jpg",
+                "mask_path": "test-mask/0583.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0584.jpg",
+                "mask_path": "test-mask/0584.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0585.jpg",
+                "mask_path": "test-mask/0585.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0586.jpg",
+                "mask_path": "test-mask/0586.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0587.jpg",
+                "mask_path": "test-mask/0587.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0588.jpg",
+                "mask_path": "test-mask/0588.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0589.jpg",
+                "mask_path": "test-mask/0589.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0590.jpg",
+                "mask_path": "test-mask/0590.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0591.jpg",
+                "mask_path": "test-mask/0591.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0592.jpg",
+                "mask_path": "test-mask/0592.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0593.jpg",
+                "mask_path": "test-mask/0593.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0594.jpg",
+                "mask_path": "test-mask/0594.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0595.jpg",
+                "mask_path": "test-mask/0595.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0596.jpg",
+                "mask_path": "test-mask/0596.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0597.jpg",
+                "mask_path": "test-mask/0597.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0598.jpg",
+                "mask_path": "test-mask/0598.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0599.jpg",
+                "mask_path": "test-mask/0599.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0600.jpg",
+                "mask_path": "test-mask/0600.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0601.jpg",
+                "mask_path": "test-mask/0601.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0602.jpg",
+                "mask_path": "test-mask/0602.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0603.jpg",
+                "mask_path": "test-mask/0603.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0604.jpg",
+                "mask_path": "test-mask/0604.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0605.jpg",
+                "mask_path": "test-mask/0605.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0606.jpg",
+                "mask_path": "test-mask/0606.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0607.jpg",
+                "mask_path": "test-mask/0607.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0608.jpg",
+                "mask_path": "test-mask/0608.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0609.jpg",
+                "mask_path": "test-mask/0609.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0610.jpg",
+                "mask_path": "test-mask/0610.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0611.jpg",
+                "mask_path": "test-mask/0611.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0612.jpg",
+                "mask_path": "test-mask/0612.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            },
+            {
+                "img_path": "test-image/0613.jpg",
+                "mask_path": "test-mask/0613.jpg",
+                "cls_name": "thyroid",
+                "specie_name": "anomalous",
+                "anomaly": 1
+            }
+        ]
+    }
+}

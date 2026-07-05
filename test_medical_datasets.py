@@ -19,14 +19,18 @@ from sklearn.metrics import auc, roc_auc_score, average_precision_score, f1_scor
 import open_clip
 from domain_adaption import memory as memory_da
 from few_shot import memory as memory_fs
-from model import LinearLayer
+from model import LinearLayer, MLPLayerWrapper
 from dataset import VisaDataset, MVTecDataset
-from medical_dataset import Brisc2025Dataset, COVID19Dataset, BUSUCLMDataset
+from medical_dataset import Brisc2025Dataset, COVID19Dataset, BUSUCLMDataset, KvasirDataset, ColonDBDataset, ClinicDBDataset, ISICDataset, TN3KDataset, HeadCTDataset, BrainMRIDataset, Br35HDataset
 from prompts.prompt_ensemble_visa_19cls_test import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_visa
 from prompts.prompt_ensemble_mvtec_20cls import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_mvtec
 from prompts.prompt_ensemble_brisc2025 import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_brisc2025
 from prompts.prompt_ensemble_covid19 import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_covid19
 from prompts.prompt_ensemble_bus_uclm import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_bus_uclm
+from prompts.prompt_ensemble_colon import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_colon
+from prompts.prompt_ensemble_brain import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_brain
+from prompts.prompt_ensemble_tn3k import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_tn3k
+from prompts.prompt_ensemble_isic import encode_text_with_prompt_ensemble as encode_text_with_prompt_ensemble_isic
 import re
 from tqdm import tqdm
 
@@ -172,10 +176,16 @@ def test(args):
     # seg
     with open(args.config_path, 'r') as f:
         model_configs = json.load(f)
-    linearlayer = LinearLayer(model_configs['vision_cfg']['width'], model_configs['embed_dim'],
-                              len(features_list), args.model).to(device)
-    checkpoint = torch.load(args.checkpoint_path)
-    linearlayer.load_state_dict(checkpoint["trainable_linearlayer"])
+    if args.layer == "linear" :
+        linearlayer = LinearLayer(model_configs['vision_cfg']['width'], model_configs['embed_dim'],
+                                len(features_list), args.model).to(device)
+        checkpoint = torch.load(args.checkpoint_path)
+        linearlayer.load_state_dict(checkpoint["trainable_linearlayer"])
+    else :
+        mlplayer = MLPLayerWrapper(model_configs['vision_cfg']['width'], model_configs['embed_dim'],
+                                len(features_list), args.model).to(device)
+        checkpoint = torch.load(args.checkpoint_path)
+        mlplayer.load_state_dict(checkpoint["trainable_mlplayer"])
 
     # dataset
     transform = transforms.Compose([
@@ -185,16 +195,31 @@ def test(args):
         ])
     
     if args.dataset == 'mvtec':
-        test_data = MVTecDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
+        test_data = MVTecDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=0, mode='test')
     elif args.dataset == 'visa':
         test_data = VisaDataset(root=dataset_dir, transform=preprocess, target_transform=transform, mode='test')
     elif args.dataset == 'brisc2025' :
-        test_data = Brisc2025Dataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
+        test_data = Brisc2025Dataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=0, mode='test')
     elif args.dataset == 'covid19' :
-        test_data = COVID19Dataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
+        test_data = COVID19Dataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=0, mode='test')
     elif args.dataset == 'bus_uclm' :
-        test_data = BUSUCLMDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=-1, mode='test')
-
+        test_data = BUSUCLMDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=0, mode='test')
+    elif args.dataset == 'colondb' :
+        test_data = ColonDBDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=0, mode='test')
+    elif args.dataset == 'clinicdb' :
+        test_data = ClinicDBDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=0, mode='test')
+    elif args.dataset == 'kvasir' :
+        test_data = KvasirDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=0, mode='test')
+    elif args.dataset == 'isic' :
+        test_data = ISICDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=0, mode='test')
+    elif args.dataset == 'tn3k' :
+        test_data = TN3KDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=0, mode='test')
+    elif args.dataset == 'brainmri' :
+        test_data = BrainMRIDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=0, mode='test')
+    elif args.dataset == 'headct' :
+        test_data = HeadCTDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=0, mode='test')
+    elif args.dataset == 'br35h' :
+        test_data = Br35HDataset(root=dataset_dir, transform=preprocess, target_transform=transform, aug_rate=0, mode='test')
     test_dataloader = torch.utils.data.DataLoader(test_data, batch_size=1, shuffle=False)
     obj_list = test_data.get_cls_names()
 
@@ -222,6 +247,14 @@ def test(args):
             text_prompts = encode_text_with_prompt_ensemble_covid19(model, obj_list, tokenizer, device)
         elif args.dataset == 'bus_uclm':
             text_prompts = encode_text_with_prompt_ensemble_bus_uclm(model, obj_list, tokenizer, device)
+        elif args.dataset in ['colondb', 'clinicdb', 'kvasir'] :
+            text_prompts = encode_text_with_prompt_ensemble_colon(model, obj_list, tokenizer, device)
+        elif args.dataset in ['brainmri', 'br35h', 'headct'] :
+            text_prompts = encode_text_with_prompt_ensemble_brain(model, obj_list, tokenizer, device)
+        elif args.dataset == 'tn3k' :
+            text_prompts = encode_text_with_prompt_ensemble_tn3k(model, obj_list, tokenizer, device)
+        elif args.dataset == 'isic' :
+            text_prompts = encode_text_with_prompt_ensemble_isic(model, obj_list, tokenizer, device)
 
 
     results = {}
@@ -264,7 +297,11 @@ def test(args):
             results['pr_sp'].append(sum(text_probs[0][1:]).cpu().item())
 
             # pixel
-            patch_tokens = linearlayer(patch_tokens)
+            if args.layer == "linear" :
+                patch_tokens = linearlayer(patch_tokens)
+            else :
+                patch_tokens = mlplayer(patch_tokens)
+
             anomaly_maps = []
             for layer in range(len(patch_tokens)):
                 patch_tokens[layer] /= patch_tokens[layer].norm(dim=-1, keepdim=True)
@@ -378,8 +415,16 @@ def test(args):
         pr_sp = pr_sp_tmp
 
         # pdb.set_trace()
-        auroc_px = roc_auc_score(gt_px.ravel(), pr_px.ravel()) #, multi_class='ovo', labels = class_ids)
-        auroc_sp = roc_auc_score(gt_sp, pr_sp) #, multi_class='ovo', labels = class_ids)
+        if args.dataset in ['br35h', 'brainmri', 'headct'] :
+            auroc_sp = roc_auc_score(gt_sp, pr_sp)
+            auroc_px = 0
+        elif args.dataset in ['colondb', 'clinicdb', 'kvasir', 'tn3k', 'isic'] :
+            auroc_px = roc_auc_score(gt_px.ravel(), pr_px.ravel())
+            auroc_sp = 0
+        else :
+            auroc_px = roc_auc_score(gt_px.ravel(), pr_px.ravel()) #, multi_class='ovo', labels = class_ids)
+            auroc_sp = roc_auc_score(gt_sp, pr_sp) #, multi_class='ovo', labels = class_ids)
+
         ap_sp = average_precision_score(gt_sp, pr_sp)
         ap_px = average_precision_score(gt_px.ravel(), pr_px.ravel())
         # f1_sp
@@ -445,9 +490,12 @@ if __name__ == '__main__':
     parser.add_argument("--quantile", type=float, default=0.0001, help="percent of the qunatile of nearest neighbour")
     
     parser.add_argument("--seed", type=int, default=42, help="random seed")
+    parser.add_argument("--layer", type=str, default="linear", help="layer type")
     args = parser.parse_args()
 
     if args.dataset.lower() == "covid19" :
+        if args.mode.lower() == "domain_adaption":
+            args.image_size = 128
         args.image_size = 384
 
     setup_seed(args.seed)
